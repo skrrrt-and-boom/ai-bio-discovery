@@ -59,3 +59,12 @@ repository.
 eventual results inspectable by researchers and potential collaborators. Raw or
 large datasets, credentials, private health information, and local environment
 files remain excluded from version control.
+
+## D-008 — Make the repository the continuity system
+
+**Decision:** Use `CURRENT_STATE.md`, the roadmap, decision log, experiment log,
+and active experiment specification as the authoritative handoff between chats.
+
+**Reason:** Project memory is helpful but not perfectly inspectable or guaranteed
+to contain every implementation detail. A short, version-controlled state file
+makes work recoverable by a future chat, collaborator, or tool.
