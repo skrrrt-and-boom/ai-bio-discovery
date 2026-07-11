@@ -68,3 +68,13 @@ and active experiment specification as the authoritative handoff between chats.
 **Reason:** Project memory is helpful but not perfectly inspectable or guaranteed
 to contain every implementation detail. A short, version-controlled state file
 makes work recoverable by a future chat, collaborator, or tool.
+
+## D-009 — Use Adamson for Experiment 001
+
+**Decision:** Use the GEARS-preprocessed Adamson Perturb-seq dataset for the
+first unseen-intervention prediction experiment.
+
+**Reason:** It is the smallest complete archive supported by the GEARS loader,
+contains one cell population, 86 observed single-gene perturbations, substantial
+controls, and enough replicate cells to build honest intervention-level splits.
+Its narrow biology reduces complexity while preserving the core causal workflow.
