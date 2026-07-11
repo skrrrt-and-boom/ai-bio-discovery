@@ -3,7 +3,7 @@ ADAMSON_ARCHIVE := data/raw/adamson_gears/archive/adamson.zip
 ADAMSON_WORK_DIR := /tmp/ai-bio-discovery/adamson-working
 ADAMSON_H5AD := $(ADAMSON_WORK_DIR)/adamson/perturb_processed.h5ad
 
-.PHONY: setup verify test lint check verify-adamson prepare-adamson inspect-adamson
+.PHONY: setup verify test lint check verify-adamson prepare-adamson inspect-adamson walkthrough-adamson
 
 setup:
 	$(UV) sync --frozen --group dev
@@ -29,3 +29,6 @@ prepare-adamson: verify-adamson
 
 inspect-adamson: setup prepare-adamson
 	$(UV) run python scripts/inspect_h5ad.py $(ADAMSON_H5AD) --output data/processed/adamson_metadata.json
+
+walkthrough-adamson: setup prepare-adamson
+	$(UV) run python scripts/create_adamson_walkthrough.py $(ADAMSON_H5AD) --output-dir artifacts/data_walkthrough
