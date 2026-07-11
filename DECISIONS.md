@@ -49,3 +49,13 @@ installing a development stack directly on the user's Mac.
 Git, and uv. It has no dedicated GPU, but a GPU is unnecessary for inspecting
 data and building simple baselines. A separate GPU environment can be introduced
 only when a published-model reproduction demonstrably requires it.
+
+## D-007 — Keep the technical repository public
+
+**Decision:** Publish the active technical workspace as a public GitHub
+repository.
+
+**Reason:** Public work makes the learning process, methods, assumptions, and
+eventual results inspectable by researchers and potential collaborators. Raw or
+large datasets, credentials, private health information, and local environment
+files remain excluded from version control.
