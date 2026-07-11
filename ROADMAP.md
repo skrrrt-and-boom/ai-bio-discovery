@@ -19,6 +19,7 @@ unseen genetic perturbation better than deliberately simple baselines?
 - [x] Create the ChatGPT research Project.
 - [x] Attach the three strategic source files.
 - [x] Create the technical workspace skeleton.
+- [x] Publish the reviewed initial workspace to a public GitHub repository.
 - [x] Identify the user's operating system and browser execution environment.
 - [ ] Install one reproducible Python environment.
 - [ ] Learn the minimum biology and data vocabulary needed to inspect the data.
