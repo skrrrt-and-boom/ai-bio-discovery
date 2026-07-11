@@ -22,9 +22,9 @@ unseen genetic perturbation better than deliberately simple baselines?
 - [x] Publish the reviewed initial workspace to a public GitHub repository.
 - [x] Identify the user's operating system and browser execution environment.
 - [x] Lock, install, and verify one reproducible Python environment.
-- [ ] Learn the minimum biology and data vocabulary needed to inspect the data.
+- [x] Complete the first beginner data walkthrough and essential vocabulary.
 - [x] Select, verify, document, and load the Adamson perturbation dataset.
-- [ ] Produce a data-quality report and simple plots.
+- [ ] Complete all data-quality checks; initial descriptive plots are finished.
 - [ ] Implement trivial and statistical baselines.
 - [ ] Reproduce one published model result.
 - [ ] Compare models on held-out perturbations.
@@ -43,5 +43,5 @@ Experiment 001 is complete when:
 
 ## Exact next action
 
-Create a beginner-friendly data walkthrough and quality report before modeling.
-Do not install Python tools directly on the user's Mac yet.
+Confirm the walkthrough concepts with the user, then finish label, duplicate,
+imbalance, and leakage checks before any split or model.
