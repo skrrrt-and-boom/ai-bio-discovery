@@ -16,8 +16,8 @@ perturbations and compare an existing model with simple baselines.
 
 The reproducible CPU environment is installed and verified. The approved
 Adamson dataset has been downloaded, checksum-verified, loaded in backed mode,
-and inspected. The first descriptive walkthrough and plots are complete. No
-predictive model has been trained yet.
+and inspected. The first descriptive walkthrough, plots, and beginner teaching
+milestone are complete. No predictive model has been trained yet.
 
 ## Environment
 
@@ -41,12 +41,15 @@ predictive model has been trained yet.
 - The matrix is 20.68% nonzero; a median cell has 1,077 detected genes.
 - HSPA5 repression provides a clear teaching example, with lower average HSPA5
   expression in the targeted group than in controls.
+- The beginner walkthrough has covered cells, genes, RNA expression, controls,
+  perturbations, processed expression scores, sparsity, feature selection,
+  replicate cells, held-out interventions, and the limits of this dataset.
 
 ## Exact next action
 
-Explain the walkthrough to the user and confirm the central concepts. Then run
-the remaining label, duplicate, imbalance, and leakage checks before defining a
-train/test split.
+Run the remaining label, duplicate, imbalance, and leakage checks. Summarize
+their results in plain language before defining a train/test split or fitting
+any model.
 
 ## Recovery commands
 
