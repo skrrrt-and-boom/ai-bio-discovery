@@ -43,5 +43,5 @@ Experiment 001 is complete when:
 
 ## Exact next action
 
-Confirm the walkthrough concepts with the user, then finish label, duplicate,
-imbalance, and leakage checks before any split or model.
+Finish label, duplicate, imbalance, and leakage checks. Explain the findings in
+plain language before creating any data split or model.
