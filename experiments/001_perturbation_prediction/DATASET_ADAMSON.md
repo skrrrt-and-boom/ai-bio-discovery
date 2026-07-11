@@ -61,8 +61,17 @@ prediction, not combinatorial prediction.
 - Stored as `float32`.
 - Sampled nonzero values are non-integer, so this is processed expression rather
   than raw molecule counts.
-- The precise normalization transformation must be confirmed from the upstream
-  preprocessing before numeric magnitudes are interpreted biologically.
+- The official preprocessing notebook used per-cell total normalization followed
+  by `log1p` transformation.
+
+### Why there are 5,060 genes
+
+The upstream matrix contained 16,528 measured genes. The official preprocessing
+selected the 5,000 most variable genes and then added targeted perturbation genes
+that were not already in that set. Their union produced 5,060 features.
+
+This is a model-oriented feature panel, not a count of all genes in the human
+genome.
 
 ### Per-cell fields in `obs`
 
@@ -95,11 +104,6 @@ from held-out test interventions into model training.
 
 ## Next analysis step
 
-Create a beginner-friendly data walkthrough and quality report before modeling:
-
-1. Explain control, perturbation, gene expression, cell, and replicate.
-2. Plot cell counts per intervention.
-3. Compare average expression for one intervention with controls.
-4. Check missing labels, duplicated cells, sparsity, and condition imbalance.
-5. Define the train/validation/test split by entire interventions.
-
+Complete the remaining quality checks for missing labels, duplicated cell IDs,
+condition imbalance, and leakage-sensitive precomputed metadata. Only then
+define the train/validation/test split by entire interventions.
