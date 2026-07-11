@@ -33,6 +33,22 @@ No scientific experiments have been run yet.
 - Modeling performed: none.
 - Next action: create a plain-language data walkthrough and quality report.
 
+## EDA-RUN001 — Descriptive Adamson walkthrough
+
+- Date: 2026-07-11
+- Question: What does the processed matrix contain, how sparse is it, and is one
+  direct intervention visible before modeling?
+- Procedure: streamed the backed sparse matrix in chunks, counted detected genes
+  per cell, summarized condition sizes, and compared HSPA5-targeted cells with
+  controls using descriptive averages and distributions.
+- Result: median 1,077 detected genes per cell; matrix 20.68% nonzero. Mean
+  processed HSPA5 expression was 1.624 in controls and 0.949 in 1,002
+  HSPA5-targeted cells. Five descriptive plots were generated locally.
+- Modeling performed: none.
+- Interpretation limit: group differences are descriptive and do not establish
+  a mechanism, generalization performance, or therapeutic value.
+- Next action: finish missing-label, duplicate, imbalance, and leakage checks.
+
 Use one entry for every meaningful run, including failed runs.
 
 ## Entry template
