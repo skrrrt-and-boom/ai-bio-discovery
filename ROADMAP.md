@@ -23,7 +23,7 @@ unseen genetic perturbation better than deliberately simple baselines?
 - [x] Identify the user's operating system and browser execution environment.
 - [x] Lock, install, and verify one reproducible Python environment.
 - [ ] Learn the minimum biology and data vocabulary needed to inspect the data.
-- [ ] Load a small public perturbation dataset.
+- [x] Select, verify, document, and load the Adamson perturbation dataset.
 - [ ] Produce a data-quality report and simple plots.
 - [ ] Implement trivial and statistical baselines.
 - [ ] Reproduce one published model result.
@@ -43,6 +43,5 @@ Experiment 001 is complete when:
 
 ## Exact next action
 
-Select the smallest appropriate public perturbation dataset, document its
-provenance and meaning, and load only a CPU-manageable subset before modeling.
+Create a beginner-friendly data walkthrough and quality report before modeling.
 Do not install Python tools directly on the user's Mac yet.
