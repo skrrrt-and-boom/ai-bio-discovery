@@ -1,8 +1,12 @@
 # Python
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.ruff_cache/
 .venv/
 venv/
+.uv-cache/
+.cache/
 
 # Secrets and local settings
 .env
@@ -22,4 +26,5 @@ data/processed/*
 !data/processed/.gitkeep
 artifacts/
 models/
-
+*.h5
+*.h5ad
