@@ -16,7 +16,8 @@ perturbations and compare an existing model with simple baselines.
 
 The reproducible CPU environment is installed and verified. The approved
 Adamson dataset has been downloaded, checksum-verified, loaded in backed mode,
-and inspected. No predictive model has been trained yet.
+and inspected. The first descriptive walkthrough and plots are complete. No
+predictive model has been trained yet.
 
 ## Environment
 
@@ -37,11 +38,15 @@ and inspected. No predictive model has been trained yet.
 - The Adamson archive matches the expected 140,744,228-byte size and MD5.
 - The processed dataset contains 68,603 cells, 5,060 genes, 24,263 controls,
   and 86 observed single-gene perturbation conditions.
+- The matrix is 20.68% nonzero; a median cell has 1,077 detected genes.
+- HSPA5 repression provides a clear teaching example, with lower average HSPA5
+  expression in the targeted group than in controls.
 
 ## Exact next action
 
-Create a beginner-friendly data walkthrough and quality report. Explain the
-five essential concepts before defining any train/test split or model.
+Explain the walkthrough to the user and confirm the central concepts. Then run
+the remaining label, duplicate, imbalance, and leakage checks before defining a
+train/test split.
 
 ## Recovery commands
 
@@ -54,6 +59,5 @@ make check
 
 ## Open questions
 
-- What exact upstream normalization produced the non-integer processed matrix?
 - Should the first published-model reproduction use GEARS directly or begin with
   a lighter implementation after the baseline pipeline is verified?
