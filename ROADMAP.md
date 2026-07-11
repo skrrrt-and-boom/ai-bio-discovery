@@ -21,7 +21,7 @@ unseen genetic perturbation better than deliberately simple baselines?
 - [x] Create the technical workspace skeleton.
 - [x] Publish the reviewed initial workspace to a public GitHub repository.
 - [x] Identify the user's operating system and browser execution environment.
-- [ ] Install one reproducible Python environment.
+- [x] Lock, install, and verify one reproducible Python environment.
 - [ ] Learn the minimum biology and data vocabulary needed to inspect the data.
 - [ ] Load a small public perturbation dataset.
 - [ ] Produce a data-quality report and simple plots.
@@ -43,7 +43,6 @@ Experiment 001 is complete when:
 
 ## Exact next action
 
-Select dependencies compatible with the managed browser workspace's Python
-3.12 CPU environment. Use that environment for data inspection and baselines;
-use a separate GPU environment later only if the published-model reproduction
-requires it. Do not install Python tools directly on the user's Mac yet.
+Select the smallest appropriate public perturbation dataset, document its
+provenance and meaning, and load only a CPU-manageable subset before modeling.
+Do not install Python tools directly on the user's Mac yet.
