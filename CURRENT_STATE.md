@@ -14,8 +14,9 @@ perturbations and compare an existing model with simple baselines.
 
 ## Current stage
 
-The reproducible CPU environment is installed and verified. No biological
-dataset has been downloaded and no scientific experiment has been run yet.
+The reproducible CPU environment is installed and verified. The approved
+Adamson dataset has been downloaded, checksum-verified, loaded in backed mode,
+and inspected. No predictive model has been trained yet.
 
 ## Environment
 
@@ -33,11 +34,14 @@ dataset has been downloaded and no scientific experiment has been run yet.
 - Python dependencies are declared in `pyproject.toml`.
 - Exact dependency versions are frozen in `uv.lock`.
 - The environment verification script, unit test, and lint check pass.
+- The Adamson archive matches the expected 140,744,228-byte size and MD5.
+- The processed dataset contains 68,603 cells, 5,060 genes, 24,263 controls,
+  and 86 observed single-gene perturbation conditions.
 
 ## Exact next action
 
-Select the smallest appropriate public perturbation dataset, document its
-meaning and provenance, and load only a CPU-manageable subset before modeling.
+Create a beginner-friendly data walkthrough and quality report. Explain the
+five essential concepts before defining any train/test split or model.
 
 ## Recovery commands
 
@@ -50,7 +54,6 @@ make check
 
 ## Open questions
 
-- Which small perturbation dataset is the safest first dataset for the available
-  CPU and storage resources?
+- What exact upstream normalization produced the non-integer processed matrix?
 - Should the first published-model reproduction use GEARS directly or begin with
   a lighter implementation after the baseline pipeline is verified?
