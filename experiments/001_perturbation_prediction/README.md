@@ -25,7 +25,7 @@ Norman perturbation data and the published GEARS implementation.
 
 ## Stages
 
-- [ ] Environment verified.
+- [x] Environment verified.
 - [ ] Dataset identity and checksum recorded.
 - [ ] Data dictionary written.
 - [ ] Exploratory plots created.
@@ -40,4 +40,3 @@ Norman perturbation data and the published GEARS implementation.
 Success on this benchmark would not prove rejuvenation, therapeutic usefulness,
 or reliable prediction in humans. It would establish practical competence and
 reveal the next bottleneck.
-
