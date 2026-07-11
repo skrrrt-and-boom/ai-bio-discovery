@@ -19,15 +19,16 @@ generalization, uncertainty, and experimental comparison.
 3. Fit a simple statistical model.
 4. Reproduce one existing perturbation-prediction model.
 
-The exact dataset and published model will be locked only after environment and
-resource checks. The current candidate is a small, documented subset of the
-Norman perturbation data and the published GEARS implementation.
+The selected dataset is the GEARS-preprocessed Adamson Perturb-seq dataset. It
+contains 86 observed single-gene perturbation conditions in one processed K562
+cell population. The published-model choice remains open until the baseline
+pipeline and resource requirements are verified.
 
 ## Stages
 
 - [x] Environment verified.
-- [ ] Dataset identity and checksum recorded.
-- [ ] Data dictionary written.
+- [x] Dataset identity and checksum recorded.
+- [x] Data dictionary written.
 - [ ] Exploratory plots created.
 - [ ] Evaluation split frozen.
 - [ ] Baselines evaluated.
