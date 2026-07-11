@@ -40,7 +40,8 @@ This first experiment is an entry ramp, not a claim that we can reverse aging.
 - Available environment manager: uv 0.9.25.
 - Dedicated GPU: not available in the browser workspace.
 - Python project environment: not created yet.
-- Git repository: not initialized yet.
+- Git repository: published publicly at
+  `https://github.com/skrrrt-and-boom/ai-bio-discovery`.
 - Dataset: not downloaded yet.
 - Local computer: macOS on Apple silicon; no local installation is currently
   required.
