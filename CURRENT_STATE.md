@@ -1,6 +1,6 @@
 # Current State
 
-Last updated: 2026-07-11
+Last updated: 2026-07-13
 
 ## Mission
 
@@ -17,7 +17,9 @@ perturbations and compare an existing model with simple baselines.
 The reproducible CPU environment is installed and verified. The approved
 Adamson dataset has been downloaded, checksum-verified, loaded in backed mode,
 and inspected. The first descriptive walkthrough, plots, and beginner teaching
-milestone are complete. No predictive model has been trained yet.
+milestone are complete. A reproducible command for label, duplicate, imbalance,
+and leakage checks has been added, but it has not yet been run against the raw
+archive in the managed workspace. No predictive model has been trained yet.
 
 ## Environment
 
@@ -44,12 +46,20 @@ milestone are complete. No predictive model has been trained yet.
 - The beginner walkthrough has covered cells, genes, RNA expression, controls,
   perturbations, processed expression scores, sparsity, feature selection,
   replicate cells, held-out interventions, and the limits of this dataset.
+- `make quality-adamson` now runs the four remaining data-quality checks and
+  writes `artifacts/data_quality/adamson_quality.json`.
 
 ## Exact next action
 
-Run the remaining label, duplicate, imbalance, and leakage checks. Summarize
-their results in plain language before defining a train/test split or fitting
-any model.
+In the managed browser workspace containing the verified raw archive, run:
+
+```bash
+make quality-adamson
+```
+
+Then inspect `artifacts/data_quality/adamson_quality.json`, explain every finding
+in plain language, and only then freeze an intervention-level evaluation split.
+Do not fit a model before this result is reviewed.
 
 ## Recovery commands
 
