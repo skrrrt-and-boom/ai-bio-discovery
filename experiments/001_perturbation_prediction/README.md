@@ -29,12 +29,17 @@ pipeline and resource requirements are verified.
 - [x] Environment verified.
 - [x] Dataset identity and checksum recorded.
 - [x] Data dictionary written.
-- [ ] Exploratory plots created.
+- [x] Exploratory plots created.
+- [ ] Data-quality checks completed and reviewed.
 - [ ] Evaluation split frozen.
 - [ ] Baselines evaluated.
 - [ ] Published model reproduced.
 - [ ] Failure analysis completed.
 - [ ] Short report written.
+
+The command `make quality-adamson` checks labels, exact duplicate expression
+rows, intervention imbalance, and metadata leakage risks. It must be run and
+reviewed before the evaluation split is created.
 
 ## Non-claims
 
