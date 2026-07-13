@@ -44,7 +44,11 @@ This first experiment is an entry ramp, not a claim that we can reverse aging.
 - Python project environment: locked in `uv.lock` and verified.
 - Git repository: published publicly at
   `https://github.com/skrrrt-and-boom/ai-bio-discovery`.
-- Dataset: not downloaded yet.
+- Dataset: Adamson archive downloaded and checksum-verified in the managed
+  workspace; raw data remain intentionally excluded from Git.
+- Descriptive walkthrough: complete.
+- Data-quality command: `make quality-adamson` is implemented and awaits a run
+  in the workspace containing the raw archive.
 - Local computer: macOS on Apple silicon; no local installation is currently
   required.
 
